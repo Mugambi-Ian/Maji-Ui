@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:background="@drawable/white_box"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E3F2FD">
+
+        <LinearLayout
+            android:id="@+id/DSLI_btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/previous" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/proximaregular"
+            android:gravity="center_vertical"
+            android:text="Select Your Water Provider"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/DLSI_searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/proximaregular"
+        android:hint="Type to search through"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <ListView
+            android:id="@+id/DSLI_list"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:id="@+id/DSLI_rList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/DSLI_btnMissing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/proximaregular"
+        android:text="My water company is missing!"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/DSLi_btnDone"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_blue"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/proximaregular"
+        android:foreground="?android:selectableItemBackground"
+        android:gravity="center"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>

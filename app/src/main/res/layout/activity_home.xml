@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Interface.MajiUi.Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:id="@+id/AH_layoutHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E3F2FD">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/layout_home" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/AH_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <com.nenecorp.majiapp.Utility.NeneViews.NavigationBar
+            android:id="@+id/AH_bnv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/AH_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/drawer_home" />
+    </RelativeLayout>
+
+</RelativeLayout>

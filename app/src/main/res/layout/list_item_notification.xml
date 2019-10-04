@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/LIN_type"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/LIN_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/proximaregular"
+                android:text="WWWWWWWWWWWWWWWWWWWWWWWWWWW"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <ListView
+                android:id="@+id/LIN_listView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/LIN_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/11/2019"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:background="@color/darkBlue" />
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/cir_blue" />
+    </RelativeLayout>
+</LinearLayout>
