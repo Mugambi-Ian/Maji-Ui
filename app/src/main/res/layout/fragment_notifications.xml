@@ -77,12 +77,16 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
+                    android:id="@+id/FN_btnPayments"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_blue">
+                    android:background="@drawable/btn_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
 
                     <LinearLayout
                         android:layout_width="40dp"
@@ -107,12 +111,16 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/FN_btnOthers"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_yellow">
+                    android:background="@drawable/btn_yellow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
 
                     <LinearLayout
                         android:layout_width="40dp"
@@ -137,12 +145,16 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/FN_btnBnS"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_blue_dark">
+                    android:background="@drawable/btn_blue_dark"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground">
 
                     <LinearLayout
                         android:layout_width="40dp"
@@ -161,7 +173,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/proxima"
                         android:gravity="center_vertical"
-                        android:text="Bills &amp;\nPayments "
+                        android:text="Bills &amp;\nStatements "
                         android:textColor="@android:color/white"
                         android:textSize="14dp" />
                 </LinearLayout>

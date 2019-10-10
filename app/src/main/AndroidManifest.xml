@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Interface.MajiUi.Home"></activity>
+        <activity android:name=".Interface.MajiUi.BowserServices"></activity>
+        <activity android:name=".Interface.MajiUi.BuyWaterTokens" />
+        <activity android:name=".Interface.MajiUi.JisomeeMeter" />
+        <activity android:name=".Interface.MajiUi.LipaMaji" />
+        <activity android:name=".Interface.MajiUi.Home" />
         <activity android:name=".Interface.AccountWizard.AccountMissing" />
         <activity android:name=".Interface.AccountWizard.AccountWizard" />
         <activity android:name=".Interface.AppStart.ResetPin" />

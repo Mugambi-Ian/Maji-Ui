@@ -1,5 +1,6 @@
 package com.nenecorp.majiapp.Interface.MajiUi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -123,6 +124,44 @@ public class Home extends AppCompatActivity {
             }
         };
         bottomNavigationView.setSelectedItemListener(selectedItemListener);
+        View.OnClickListener lipaMaji = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, LipaMaji.class));
+                if (v.getId() == R.id.LDI_btnLipaMaji) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardLipaMaji).setOnClickListener(lipaMaji);
+        findViewById(R.id.LH_btnLipaMaji).setOnClickListener(lipaMaji);
+        findViewById(R.id.LDI_btnLipaMaji).setOnClickListener(lipaMaji);
+        View.OnClickListener jisomeeMeter = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, JisomeeMeter.class));
+                if (v.getId() == R.id.LDI_btnJisomeeMeter) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_btnJisomeeMeter).setOnClickListener(jisomeeMeter);
+        findViewById(R.id.LH_cardJisomeeMeter).setOnClickListener(jisomeeMeter);
+        findViewById(R.id.LDI_btnJisomeeMeter).setOnClickListener(jisomeeMeter);
+        View.OnClickListener buyWaterTokens = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, BuyWaterTokens.class));
+                if (v.getId() == R.id.LDI_btnBuyWaterTokens) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardBuyWaterTokens).setOnClickListener(buyWaterTokens);
+        findViewById(R.id.LDI_btnBuyWaterTokens).setOnClickListener(buyWaterTokens);
     }
 
     public void goHome() {

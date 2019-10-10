@@ -19,6 +19,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/DD_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -30,16 +31,16 @@
         android:textSize="16dp" />
 
     <TextView
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:selectableItemBackground"
         android:id="@+id/DD_btnOkay"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_blue"
+        android:clickable="true"
+        android:focusable="true"
         android:fontFamily="@font/proximaregular"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center"
         android:text="Okay"
         android:textColor="@android:color/white"

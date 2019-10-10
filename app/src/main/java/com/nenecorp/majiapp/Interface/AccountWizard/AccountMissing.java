@@ -1,7 +1,5 @@
 package com.nenecorp.majiapp.Interface.AccountWizard;
 
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 
@@ -19,10 +17,10 @@ public class AccountMissing extends AppCompatActivity {
         findViewById(R.id.AAM_btnSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Dialog z = new NotificationDialog(AccountMissing.this, R.style.DialogTheme);
-                z.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                NotificationDialog z = new NotificationDialog(AccountMissing.this, R.style.DialogTheme);
+                z.setListener(new NotificationDialog.DialogListener() {
                     @Override
-                    public void onDismiss(DialogInterface dialog) {
+                    public void onDismiss() {
                         finish();
                     }
                 });

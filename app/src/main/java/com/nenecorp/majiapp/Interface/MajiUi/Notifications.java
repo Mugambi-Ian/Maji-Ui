@@ -16,24 +16,59 @@ import java.util.ArrayList;
 
 
 public class Notifications extends Fragment {
-    private View parentView;
+    private ArrayList<Notification> notifications;
+    private NotificationAdapter adapter;
+    private ListView listView;
+    private Home x;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final Home x = ((Home) getActivity());
-        parentView = inflater.inflate(R.layout.fragment_notifications, container, false);
+
+        x = ((Home) getActivity());
+        View parentView = inflater.inflate(R.layout.fragment_notifications, container, false);
         parentView.findViewById(R.id.FN_homeBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 x.goHome();
             }
         });
-        ArrayList<Notification> notifications = x.notificationsList;
-        NotificationAdapter adapter = new NotificationAdapter(getContext(), R.layout.list_item_notification, notifications);
-        ListView listView = parentView.findViewById(R.id.FN_listN);
+        notifications = x.notificationsList;
+        adapter = new NotificationAdapter(getContext(), R.layout.list_item_notification, notifications);
+        listView = parentView.findViewById(R.id.FN_listN);
         listView.setAdapter(adapter);
+        parentView.findViewById(R.id.FN_btnPayments).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sortListView(Notification.P);
+            }
+        });
+        parentView.findViewById(R.id.FN_btnOthers).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sortListView(Notification.O);
+            }
+        });
+        parentView.findViewById(R.id.FN_btnBnS).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sortListView(Notification.BnS);
+            }
+        });
         return parentView;
+    }
+
+    private void sortListView(String category) {
+        notifications = x.notificationsList;
+        ArrayList<Notification> z = new ArrayList<>();
+        for (Notification n : notifications) {
+            if (n.getType().equals(category)) {
+                z.add(n);
+            }
+        }
+        notifications = z;
+        adapter = new NotificationAdapter(getContext(), R.layout.fragment_notifications, notifications);
+        listView.setAdapter(adapter);
     }
 
 }

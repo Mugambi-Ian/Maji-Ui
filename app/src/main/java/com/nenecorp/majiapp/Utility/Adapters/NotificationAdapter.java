@@ -48,6 +48,8 @@ public class NotificationAdapter extends ArrayAdapter<Notification> {
                 parentView.findViewById(R.id.LIN_listView).setVisibility(View.VISIBLE);
                 ((ListView) parentView.findViewById(R.id.LIN_listView)).setAdapter(new ListAdapter(getContext(), R.layout.list_item_notification, x.getList()));
             }
+        } else {
+            parentView.findViewById(R.id.LIN_listView).setVisibility(View.GONE);
         }
         return parentView;
     }

@@ -1,6 +1,7 @@
 package com.nenecorp.majiapp.Interface.MajiUi;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,18 +24,20 @@ public class Accounts extends Fragment {
     private static final String D_WP = "Your water provider";
     View parentView;
     SelectListItemsDialog listItemsDialog;
+    private ArrayList<Account> accounts;
+    private ListView accountsListView;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        parentView = inflater.inflate(R.layout.fragment_accounts, container, false);
         final Home home = ((Home) getActivity());
+        parentView = inflater.inflate(R.layout.fragment_accounts, container, false);
+        accounts = home.accountsList;
+        accountsListView = parentView.findViewById(R.id.FAM_lstAcct);
         final ArrayList<String> wpList = home.wpList;
         final EditText actNo = parentView.findViewById(R.id.FAM_actNumber);
         final TextView wP = parentView.findViewById(R.id.FAM_waterProvider);
-        final ArrayList<Account> accounts = home.accountsList;
-        final ListView accountsListView = parentView.findViewById(R.id.FAM_lstAcct);
         final AccountAdapter adapter = new AccountAdapter(getContext(), R.layout.fragment_accounts, accounts);
         accountsListView.setAdapter(adapter);
         adapter.setListener(new AccountAdapter.OnClickListener() {
@@ -80,7 +83,26 @@ public class Accounts extends Fragment {
                 home.goHome();
             }
         });
+        accountsListener();
         return parentView;
     }
 
+    private void accountsListener() {
+        final Handler handler = new Handler();
+        final int delay = 5;
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                if (accounts.size() == 0) {
+                    if (accountsListView.getVisibility() == View.VISIBLE) {
+                        accountsListView.setVisibility(View.GONE);
+                    }
+                } else {
+                    if (accountsListView.getVisibility() != View.VISIBLE) {
+                        accountsListView.setVisibility(View.VISIBLE);
+                    }
+                }
+                handler.postDelayed(this, delay);
+            }
+        }, delay);
+    }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="620dp"
     android:layout_marginStart="20dp"
     android:layout_marginTop="20dp"
     android:layout_marginEnd="20dp"
@@ -9,9 +9,13 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/LDI_btnLipaMaji"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -35,9 +39,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LDI_btnJisomeeMeter"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -61,6 +69,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/LDI_btnBuyWaterTokens"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
