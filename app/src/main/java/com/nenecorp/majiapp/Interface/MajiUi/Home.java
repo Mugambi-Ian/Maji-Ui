@@ -56,8 +56,7 @@ public class Home extends AppCompatActivity {
         for (int x = 0; x < 3; x++) {
             notificationsList.add(new Notification(Notification.BnS, "Paid by James " + x + x, "10/11/12", null));
         }
-        char ch;
-        for (ch = 'a'; ch <= 'z'; ch++) {
+        for (char ch = 'a'; ch <= 'z'; ch++) {
             String x = "" + ch;
             x = x.toUpperCase();
             wpList.add(x + " River Water");

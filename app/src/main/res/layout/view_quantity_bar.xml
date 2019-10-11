@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/VQB_btnM"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_grey"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/proxima"
+        android:foreground="?android:selectableItemBackground"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/VQB_q"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_grey"
+        android:fontFamily="@font/proximaregular"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/VQB_btnA"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_grey"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/proxima"
+        android:foreground="?android:selectableItemBackground"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="25dp" />
+</LinearLayout>
