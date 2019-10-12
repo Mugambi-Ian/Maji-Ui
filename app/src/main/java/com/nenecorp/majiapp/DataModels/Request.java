@@ -1,9 +1,9 @@
 package com.nenecorp.majiapp.DataModels;
 
 public class Request {
-    public static String P = "PENDING", F = "CANCELLED", T = "CONFIRMED";
+    public static final String P = "PENDING", F = "CANCELLED", T = "CONFIRMED";
     private String location;
-    private int quantity;
+    private String quantity;
     private String status;
     private String date;
 
@@ -25,9 +25,6 @@ public class Request {
         return location;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
 
     public String getStatus() {
         return status;
@@ -37,7 +34,11 @@ public class Request {
         this.location = location;
     }
 
-    public void setQuantity(int quantity) {
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 

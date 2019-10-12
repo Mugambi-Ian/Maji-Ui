@@ -380,7 +380,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:id="@+id/ALM_layoutMpesa"
+                    android:id="@+id/ALM_layoutOptions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -421,7 +421,7 @@
 
                                 <LinearLayout
                                     android:layout_width="80dp"
-                                    android:layout_height="35dp"
+                                    android:layout_height="40dp"
                                     android:layout_gravity="center">
 
                                     <ImageView
@@ -463,8 +463,8 @@
                                 android:orientation="vertical">
 
                                 <LinearLayout
-                                    android:layout_width="80dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
                                     android:layout_gravity="center">
 
                                     <ImageView
@@ -506,8 +506,8 @@
                                 android:orientation="vertical">
 
                                 <LinearLayout
-                                    android:layout_width="80dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
                                     android:layout_gravity="center">
 
                                     <ImageView
@@ -555,6 +555,14 @@
                 </LinearLayout>
 
                 <include
+                    android:id="@+id/ALM_layoutMpesa"
+                    layout="@layout/layout_mpesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:visibility="gone" />
+
+                <include
                     android:id="@+id/ALM_layoutCard"
                     layout="@layout/layout_card_details"
                     android:layout_width="wrap_content"
@@ -596,11 +604,15 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/ALM_btnPayment"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/btn_blue"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
                 android:gravity="center"
                 android:text="Proceed to payment"
                 android:textColor="@android:color/white"

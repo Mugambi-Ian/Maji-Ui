@@ -69,13 +69,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:selectableItemBackground"
         android:id="@+id/LDI_btnBuyWaterTokens"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -99,9 +99,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LDI_btnBowserServices"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -125,9 +129,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LDI_btnExhausterServices"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -177,9 +185,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LDI_btnOtherServices"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -203,9 +215,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LDI_btnReportIncident"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -229,9 +245,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LDI_btnBillStatement"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -255,9 +275,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LDI_btnWaterUsage"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
         android:gravity="center_vertical">
 
         <LinearLayout

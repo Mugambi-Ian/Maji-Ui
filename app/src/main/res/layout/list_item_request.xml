@@ -2,23 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
+
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@android:color/white"
+        android:layout_margin="10dp"
         android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_marginBottom="20dp">
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="40dp">
+                android:layout_centerVertical="true"
+                android:layout_width="50dp"
+                android:layout_height="25dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -96,7 +98,7 @@
                 <TextView
                     android:id="@+id/LIBR_status"
                     android:layout_width="120dp"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:background="@drawable/btn_grey_dark"
@@ -111,14 +113,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#EDEDEE"
+        android:layout_height="45dp"
+        android:background="#E7E7E9"
         android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/LIBR_btnCancel"
             android:layout_width="150dp"
-            android:layout_height="45dp"
+            android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
             android:background="@drawable/yellow_box"
@@ -134,7 +136,7 @@
         <TextView
             android:id="@+id/LIBR_btnPayNow"
             android:layout_width="150dp"
-            android:layout_height="45dp"
+            android:layout_height="35dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="20dp"

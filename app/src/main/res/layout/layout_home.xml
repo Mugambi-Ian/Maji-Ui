@@ -79,7 +79,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
                         android:layout_marginTop="10dp"
@@ -128,7 +128,7 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="20dp"
@@ -136,10 +136,11 @@
 
                             <TextView
                                 android:id="@+id/LH_btnLipaMaji"
-                                android:layout_width="120dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="35dp"
                                 android:layout_gravity="center"
-                                android:layout_marginEnd="10dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
                                 android:background="@drawable/btn_blue"
                                 android:clickable="true"
                                 android:focusable="true"
@@ -152,10 +153,11 @@
 
                             <TextView
                                 android:id="@+id/LH_btnJisomeeMeter"
-                                android:layout_width="150dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="35dp"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="10dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
                                 android:background="@drawable/btn_blue_light"
                                 android:clickable="true"
                                 android:focusable="true"
@@ -175,7 +177,8 @@
                 <LinearLayout
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_alignParentEnd="true">
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -266,15 +269,15 @@
 
                     <LinearLayout
                         android:id="@+id/LH_cardBuyWaterTokens"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?android:selectableItemBackground"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:elevation="2dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -306,12 +309,16 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/LH_cardBowserServices"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:elevation="2dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -337,12 +344,16 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LH_cardExhausterServices"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:elevation="2dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -406,12 +417,16 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/LH_cardBillStatement"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:elevation="2dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -437,12 +452,16 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LH_cardReportIncident"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:elevation="2dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -467,12 +486,16 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LH_cardWaterUsage"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:elevation="2dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -503,12 +526,16 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/LH_cardOtherServices"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@android:color/white"
+                        android:clickable="true"
                         android:elevation="2dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
                         android:gravity="center"
                         android:orientation="vertical">
 

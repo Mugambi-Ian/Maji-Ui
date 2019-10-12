@@ -41,7 +41,7 @@
         android:fontFamily="@font/proxima"
         android:foreground="?android:selectableItemBackground"
         android:gravity="center"
-        android:text="-"
+        android:text="+"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="25dp" />
 </LinearLayout>

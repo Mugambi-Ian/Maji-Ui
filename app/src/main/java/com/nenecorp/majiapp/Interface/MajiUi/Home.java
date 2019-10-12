@@ -16,6 +16,7 @@ import com.nenecorp.majiapp.DataModels.Notification;
 import com.nenecorp.majiapp.R;
 import com.nenecorp.majiapp.Utility.NeneViews.NavigationBar;
 import com.nenecorp.majiapp.Utility.Resources.Animations;
+import com.nenecorp.majiapp.Utility.Resources.DataChannel;
 import com.nenecorp.majiapp.Utility.Resources.Drawables;
 
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        DataChannel.home = this;
         wpList = new ArrayList<>();
         accountsList = new ArrayList<>();
         notificationsList = new ArrayList<>();
@@ -161,6 +163,78 @@ public class Home extends AppCompatActivity {
         };
         findViewById(R.id.LH_cardBuyWaterTokens).setOnClickListener(buyWaterTokens);
         findViewById(R.id.LDI_btnBuyWaterTokens).setOnClickListener(buyWaterTokens);
+        View.OnClickListener bowserServices = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, BowserServices.class));
+                if (v.getId() == R.id.LDI_btnBowserServices) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardBowserServices).setOnClickListener(bowserServices);
+        findViewById(R.id.LDI_btnBowserServices).setOnClickListener(bowserServices);
+        View.OnClickListener exhausterServices = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, ExhausterServices.class));
+                if (v.getId() == R.id.LDI_btnExhausterServices) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardExhausterServices).setOnClickListener(exhausterServices);
+        findViewById(R.id.LDI_btnExhausterServices).setOnClickListener(exhausterServices);
+        View.OnClickListener billStatement = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, BillStatement.class));
+                if (v.getId() == R.id.LDI_btnBillStatement) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardBillStatement).setOnClickListener(billStatement);
+        findViewById(R.id.LDI_btnBillStatement).setOnClickListener(billStatement);
+        View.OnClickListener reportIncident = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, ReportIncident.class));
+                if (v.getId() == R.id.LDI_btnReportIncident) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardReportIncident).setOnClickListener(reportIncident);
+        findViewById(R.id.LDI_btnReportIncident).setOnClickListener(reportIncident);
+        View.OnClickListener waterUsage = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, WaterUsage.class));
+                if (v.getId() == R.id.LDI_btnWaterUsage) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardWaterUsage).setOnClickListener(waterUsage);
+        findViewById(R.id.LDI_btnWaterUsage).setOnClickListener(waterUsage);
+        View.OnClickListener otherServices = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, OtherServices.class));
+                if (v.getId() == R.id.LDI_btnOtherServices) {
+                    findViewById(R.id.DH_backGround).setBackground(drawables.emptyBg);
+                    drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        };
+        findViewById(R.id.LH_cardOtherServices).setOnClickListener(otherServices);
+        findViewById(R.id.LDI_btnOtherServices).setOnClickListener(otherServices);
     }
 
     public void goHome() {
@@ -185,4 +259,5 @@ public class Home extends AppCompatActivity {
         containerView.setVisibility(View.VISIBLE);
         containerView.startAnimation(animations.fadeIn);
     }
+
 }
