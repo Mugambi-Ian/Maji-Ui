@@ -16,4 +16,4 @@ Maji app Ui is a ui/ux project I attempted. The application works as a consumer 
 ![image](https://drive.google.com/uc?export=view&id=1bVl8csGxNCopzVT8i7I_xcH9WCT3yAv0)
 
 ## Installation
-Click [here](https://drive.google.com/uc?export=view&id=1WrSoBCnobZyqQwe5Bb8mm3td4qauVXo0) to get the installation apk.
+Click [here](https://drive.google.com/uc?export=view&id=1WrSoBCnobZyqQwe5Bb8mm3td4qauVXo0) to get the demo apk.
