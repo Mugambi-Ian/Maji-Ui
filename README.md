@@ -1,7 +1,5 @@
 # Maji App Ui
-
-Maji app Ui is a ui/ux project I attempted. The application works as a consumer endpoint in the day to day business of the water and sanitations service industry. Its functionality was designed with the aim of improving the consumer expirence by reducing the hustle in physically looking for this services.
-
+Maji app Ui is a ui/ux project I attempted. The application works as a consumer endpoint in the day to day business of the water and sanitations service industry. Its functionality was designed with the aim of improving the consumer experience by reducing the hustle in physically looking for these services.  
 
 ## ScreenShots
 ![image](https://drive.google.com/uc?export=view&id=1MOWcbUR_Bf67giTFAqiLWxFMjNAKyKPJ)
@@ -16,4 +14,4 @@ Maji app Ui is a ui/ux project I attempted. The application works as a consumer 
 ![image](https://drive.google.com/uc?export=view&id=1bVl8csGxNCopzVT8i7I_xcH9WCT3yAv0)
 
 ## Installation
-Click [here](https://drive.google.com/uc?export=view&id=1WrSoBCnobZyqQwe5Bb8mm3td4qauVXo0) to get the demo apk.
+Click [here](https://drive.google.com/uc?export=view&id=1WrSoBCnobZyqQwe5Bb8mm3td4qauVXo0) to get the demo APK.
